@@ -19,3 +19,4 @@ For example: python selector.py -f data.csv
 ## To Do
   - [ ] add visual representation of the models' performance
   - [ ] enable model usage (select and predict)
+  - [ ] add GUI

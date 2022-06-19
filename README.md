@@ -1,5 +1,10 @@
 # Regression Selector
 This program run multiple regression models on inputed data and return the R-squred score for each of them.
+- polynomial linear regression
+- multiple linear regression
+- decision tree
+- supported vector regression
+- random forest regression
 
 ## Files
 ### @selector.py 

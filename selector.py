@@ -19,6 +19,7 @@ elif ("-h" in command):
         while(True):
             line = file.readline()
             if(len(line) != 0 and line.find('@help') != -1):
+                print(line, end='')
                 while(True):
                     line = file.readline()
                     if(len(line) != 0 and line.find('@') != -1):

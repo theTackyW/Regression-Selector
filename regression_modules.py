@@ -44,7 +44,7 @@ class Polynomial_reg(reg):
         # Predicting the Test set results
         self.y_pred = regressor.predict(poly_reg.transform(self.X_test))
         np.set_printoptions(precision=2)
-        print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
+        #print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
 
 class multi_linear_reg(reg):
     
@@ -57,7 +57,7 @@ class multi_linear_reg(reg):
         # Predicting the Test set results
         self.y_pred = regressor.predict(self.X_test)
         np.set_printoptions(precision=2)
-        print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
+        #print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
 class decision_tree_reg(reg):
     
     def train_predict(self):
@@ -69,7 +69,7 @@ class decision_tree_reg(reg):
         # Predicting the Test set results
         self.y_pred = regressor.predict(self.X_test)
         np.set_printoptions(precision=2)
-        print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
+        #print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
 
 class svr(reg):
     
@@ -93,7 +93,7 @@ class svr(reg):
         # Predicting the Test set results
         self.y_pred = sc_y.inverse_transform(regressor.predict(sc_X.transform(self.X_test)))
         np.set_printoptions(precision=2)
-        print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
+        #print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
         
 class random_forest_reg(reg):
     def train_predict(self):
@@ -105,4 +105,4 @@ class random_forest_reg(reg):
         # Predicting the Test set results
         self.y_pred = regressor.predict(self.X_test)
         np.set_printoptions(precision=2)
-        print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))
+        #print(np.concatenate((self.y_pred.reshape(len(self.y_pred),1), self.y_test.reshape(len(self.y_test),1)),1))

@@ -12,6 +12,7 @@ This program run multiple regression models on inputed data and return the R-squ
 ### @help
 
 To input file, use -f <fileName>
+  
 For example: python selector.py -f data.csv
 @
 
